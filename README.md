@@ -1,2 +1,7 @@
-# Similarweb-free-API
-A python example for the free Similarweb extension API, which is useable without API key
+# Similarweb free API
+
+The Similarweb Chrome extension (or Firefox add-on) provides free acces to some basic data (traffic, global and country rank, bounce rate, geo, traffic sources, screenshot, category) using an undocumented API endpoint. With [Extension source viewer](https://addons.mozilla.org/hu/firefox/addon/crxviewer/), you can find the url, which returns free data about a given domain without using any API keys. Example:
+
+    https://api.similarweb.com/v1/SimilarWebAddon/github.com/all
+    
+Note that at the time we don't know what is the limitation of this API endpoint, so be carefully and wait some minutes/hours when the request fails.
