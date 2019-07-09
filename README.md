@@ -5,3 +5,7 @@ The Similarweb Chrome extension (or Firefox add-on) provides free access for som
     https://api.similarweb.com/v1/SimilarWebAddon/github.com/all
     
 Note that at the time we don't know what is the limitation of this API endpoint, so be careful and wait some minutes/hours when the limit reached (prevention to getting banned not implemented yet).
+
+**Is it legal?** Yes, the endpoint is just hidden, not forbidden.  The data also available on their website, for free (so you can write a crawler also, if you don't want to use this API).
+
+**Is it ethical?** Why I don't pay for that? See, I provide a lot of browsing history when I'm using Similarweb addon. I want to give back something.
