@@ -3,10 +3,10 @@ try:
     from urllib.parse import urlparse
 except ImportError as err:
     print(f"Failed to import required modules {err}")
-    
+
 def similarGet(website):
-    parsed_uri = urlparse(website)
-    domain = '{uri.netloc}'.format(uri=parsed_uri)
+    domain = '{uri.netloc}'.format(uri=urlparse(website))
+    domain = domain.replace("www.", "")
     ENDPOINT = 'https://api.similarweb.com/v1/SimilarWebAddon/' + domain + '/all' 
     resp = get(ENDPOINT)
 
