@@ -7,7 +7,7 @@ except ImportError as err:
 def similarGet(website):
     domain = '{uri.netloc}'.format(uri=urlparse(website))
     domain = domain.replace("www.", "")
-    ENDPOINT = 'https://api.similarweb.com/v1/SimilarWebAddon/' + domain + '/all' 
+    ENDPOINT = 'https://data.similarweb.com/api/v1/data?domain=' + domain
     resp = get(ENDPOINT)
 
     if resp.status_code == 200:
